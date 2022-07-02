@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/src/Scripts/path.js" type="module"></script>
+    <script src="/src/Scripts/story.model.js" ></script>
+    <script src="/src/Scripts/patient.model.js" ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href="/src/Styles/styles.css" rel="stylesheet">
+
+</head>
+
+<body class="body">
+    <div class="container">
+        <input id="patient-id-input" placeholder="הכנס תעודת זהות">
+        <table class="table" id="stories-table">
+        <thead>
+            <tr>
+                <th>התחלה</th>
+                <th>סיום</th>
+                <th>עיר</th>
+                <th>מיקום</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="table-content"></tbody>
+        </table>
+        <div>
+            <input id="start-date-input" type="datetime-local" name="start-date" >
+            <input id="end-date-input" type="datetime-local" name="end-date" >
+            <input id="city-input" type="string" name="city" placeholder="עיר">
+            <input id="location-input" type="string" name="location" placeholder="מיקום">
+            <button id="add-new-story-button" type="button" name="add-new-story-button">add new story</button>
+        </div>
+        <button id="report-button">חקירה אפידמיולוגית</button>
+</div>
+</body>
+<script src="/src/Scripts/scripts.js" type="module"></script>
+
+</html>
